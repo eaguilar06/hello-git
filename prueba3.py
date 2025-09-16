@@ -1,1 +1,2 @@
-#third document in python generaring a conflit error
+#third document in python generaring a conflit error (error resolved)
+
