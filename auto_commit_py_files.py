@@ -13,11 +13,11 @@ def get_changed_py_files() -> list[str]:
     """Return a list of changed or untracked Python files."""
     diff_output = run_command(["git", "status", "--porcelain"])
     changed_files = []
-    print('verifying...')
+    
     for line in diff_output.splitlines():
         line = line.strip()
         status, path = line[:2].strip(), line[2:].strip()
-        print('status, path :',status, path)
+        
         if path.endswith(".py") and status in {"M", "A", "??"}:
             changed_files.append(path)
     return changed_files
