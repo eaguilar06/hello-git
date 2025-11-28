@@ -11,7 +11,6 @@ print('adding a new line')
 
 print('adding a new line')
 
-
 print(' new line')
 
 print('adding a new line')
