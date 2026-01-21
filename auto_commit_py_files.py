@@ -8,6 +8,7 @@ def run_command(cmd: list[str]) -> str:
         print(f"Error running {' '.join(cmd)}:\n{result.stderr}")
         return ""
     return result.stdout.strip()
+    
 
 def get_changed_py_files() -> list[str]:
     """Return a list of changed or untracked Python files."""
